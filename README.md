@@ -56,7 +56,7 @@
 **Go to Board Selector and use the search bar and type NUCLEO-F446RE if you are using a nucleo board and STM32F411VET6 if you are using a discovery board.**
 
 >**Refer to the image**
-[STM32 Workspace Launch](Images/Stm32.png)
+[STM32 Target Selector](Images/Target.png)
 
 **After selection click on next->Give an appropriate Project name (EX: microros)->Do not change any other option and click on next->Finish.**
  >**Note:** For initialize all peripherals with their default mode->Click Yes->Device config editor pop up -> Again click Yes.
@@ -73,9 +73,9 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 **This defines the main clock(HSE) for the GPIO Pins/UART Pins and also for the LSE for the Watch dog Timer**
 >**Note:** Advanced info(feel free to skip this):You can change clock settings in the Clock Configurations option where there is an interface to select which clock is used as the main clock (HSE/HSI/PLL) and which mode(Crystal Ceramic Oscillator/RC Oscillator/LC Oscillator) and also frequency can be set using frequency divders and multipliers.
  
-**Click on System Core ->RCC-> Select both High Speed External Clock (HSE) and Low Speed External Clock (LSE) as Crystal Ceramic Resonator this sets the main clock at 84MHz(For Nucleo board) and 100MHz(For DISCO Board).**
+**Click on System Core(Present in project explorer on the left hand side) ->RCC-> Select both High Speed External Clock (HSE) and Low Speed External Clock (LSE) as Crystal Ceramic Resonator this sets the main clock at 84MHz(For Nucleo board) and 100MHz(For Discovery Board).**
 >**Refer to the image**
-[STM32 Workspace Launch](Images/Stm32.png)
+[Clock Configurations](Images/RCC.png)
 
 # SYS settings (Debugging)
 **Now again under System Core-> SYS-> Select Debug as Serial Wire,this is just settings for the debugging method(We Have Serial Wire /JTAG options but we are using STLINK Debugger which uses Serial Wire for the debugging purpose).**
@@ -83,7 +83,7 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 **To establish UART Communication protocol required for Microros follow these steps:**
 # DMA Settings
 >**Refer to the image**
-[STM32 Workspace Launch](Images/Stm32.png)
+[DMA Settings](Images/DMA.png)
 
 **Now Under Connectivity choose->USART2->Mode as Asynchronous->Under DMA(Direct Memory Access) Settings->Click on ADD->Select USART2_Rx under the drop down->Set Priority to Very High->Also make sure under DMA Request Settings change mode from normal to circular.This setting is for the receiver.**
 >**Important** Make sure under DMA Request Settings change mode from normal to circular for Rx
