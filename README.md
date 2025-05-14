@@ -49,6 +49,9 @@
 
 **Click on File->New->STM32 Project.**
 >**Important:** If there are packages being installed then let them get installed properly/ Agree on if any license agreement.
+
+>**Refer to the image**
+[STM32 New Project](Images/Stm32.png)
 # Target selector
 **Go to Board Selector and use the search bar and type NUCLEO-F446RE if you are using a nucleo board and STM32F411VET6 if you are using a discovery board.**
 
