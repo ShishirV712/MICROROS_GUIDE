@@ -1,0 +1,7 @@
+../Core/Src/accel.c:43:6:BNO055_Init_I2C	64	static
+../Core/Src/accel.c:108:9:GetAccelData	40	static
+../Core/Src/accel.c:115:9:GetGyroData	40	static
+../Core/Src/accel.c:131:9:GetAccelChipId	32	static
+../Core/Src/accel.c:137:9:GetAccelTemp	32	static
+../Core/Src/accel.c:146:9:BNO055_Get_Calibration	32	static
+../Core/Src/accel.c:155:6:BNO055_Calc_Calibration	24	static
