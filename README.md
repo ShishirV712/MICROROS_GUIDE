@@ -58,8 +58,11 @@
 >**Refer to the image**
 [STM32 Target Selector](Images/Target.png)
 
-**After selection click on next->Give an appropriate Project name (EX: microros)->Do not change any other option and click on next->Finish.**
- >**Note:** For initialize all peripherals with their default mode->Click Yes->Device config editor pop up -> Again click Yes.
+**After selection click on next->Give an appropriate Project name (EX: microros)->Do not change any other option and click on next->Finish.You would see an .ioc file like:**
+>**Refer to the image**
+[STM32 .ioc file](Images/IOC_file.png)
+
+>**Note:** For initialize all peripherals with their default mode->Click Yes->Device config editor pop up -> Again click Yes.
 
 **An .ioc file would have been loaded where you can configure your STM32 Board Pins.
 Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
@@ -101,7 +104,7 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 **Click on Middleware and Software Packs which is on the left hand side-> Under this click on FREERTOS-> Select CMSIS_V2 for interface**
 **Go to Tasks and Queues and click on the only available task** 
 >**Refer to the image**
-[STM32 Workspace Launch](Images/Stm32.png)
+[FREERTOS Settings](Images/FREERTOS.png)
 
 **You will see an Edit Task Pop up-> Change Stack Size (Words) from 128 to 3000-> Then click OK**
 >**Important** Make sure the Stack Size(Words) is atleast has more than 10 kB 
@@ -125,27 +128,30 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
  
 # Setp 6: Adding Pre-build Command,include directory,precompiled library.
 >**Refer to the image**
-[STM32 Workspace Launch](Images/Stm32.png)
+[Project Properties](Images/Properties.jpeg)
 
 # Add Pre-build Command
 
 **In the Project Explorer window right click on your project ->navigate to 'properties'-> C/C++ Build -> Settings -> Build Steps Tab and in Pre-build steps->Command add the following and click on apply:**
 
+>**Note:** The short cut key to open 'properties' is to press Alt+Enter
+
 	docker pull microros/micro_ros_static_library_builder:humble && docker run --rm -v ${workspace_loc:/${ProjName}}:/project --env MICROROS_LIBRARY_FOLDER=micro_ros_stm32cubemx_utils/microros_static_library_ide microros/micro_ros_static_library_builder:humble
 
-# Add micro-ROS include directory
 >**Refer to the image**
-[STM32 Workspace Launch](Images/Stm32.png)
+[Pre-Build Command](Images/Pre_build_command.png)
+
+# Add micro-ROS include directory
 
 **Navigate to C/C++ Build -> Settings -> Tool Settings Tab -> MCU GCC Compiler -> Include paths**
 
 **Under Include paths(-l) add the following command and after adding click on ok**
 
 	../micro_ros_stm32cubemx_utils/microros_static_library_ide/libmicroros/include
- 
-# Add the micro-ROS precompiled library
 >**Refer to the image**
-[STM32 Workspace Launch](Images/Stm32.png)
+[Include Paths](Images/paths.png)
+
+# Add the micro-ROS precompiled library
 
  **Navigate to C/C++ Build -> Settings -> MCU GCC Linker -> Libraries**
 
