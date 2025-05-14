@@ -41,7 +41,7 @@
 # Step 2: 
 **Open a new STM32CubeIDE workspace via typing or using browse feature**
 >**Refer to the image**
-[STM32 Workspace Launch](Images/Stm32.png)
+[STM32 Workspace Launch](Images/STM32_WORKSPACE.png)
 
 **Click Launch**
 
@@ -51,7 +51,7 @@
 >**Important:** If there are packages being installed then let them get installed properly/ Agree on if any license agreement.
 
 >**Refer to the image**
-[STM32 New Project](Images/Stm32.png)
+[STM32 New Project](Images/New_Project.png)
 # Target selector
 **Go to Board Selector and use the search bar and type NUCLEO-F446RE if you are using a nucleo board and STM32F411VET6 if you are using a discovery board.**
 
