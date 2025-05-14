@@ -113,6 +113,7 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 **Generate the code using Device Configuration Tool Code Generation option (It looks like a golden cog wheel/gear)**
 >**Refer to the image**
 [Generate Code is 1 in the image](Images/Tool.jpeg)
+
 >**Note:** For the pop up saying open associated prespective click on Yes and for the Warnings in code generations ignore them and click on Yes
 
 **Make sure main.c is loaded properly**
@@ -183,6 +184,9 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 
 	sudo chmod 666 /var/run/docker.sock
 **Then click on build project which is the hammer icon on the top**
+>**Refer to the image**
+[Build_Project is 2 in the image](Images/Tool.jpeg)
+
 >**Note:** This build takes approximately 30 to 45 mins and make sure you are connected to private Wi-fi connection
 
 **Make sure that there are no errors displayed on the console after the build you may have around 48 warnings but you can ignore them**
@@ -288,6 +292,11 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 **1)Connect your STM32 Board via an STM32 Cable**
 
 **2)Now click on the drop down option in run button -> Run Configurations-> In the window which just poped up double click on STM32 C/C++ Application**
+
+>**Refer to the image**
+[Debug is 3 and Run is 4 in the image](Images/Tool.jpeg)
+
+>**Note:** Instead of Run configuration you can also use Debug Configuration(Only do this if you know what is happen here)
 
 **3)Now at the top you can see main,debugger,startup,source,common...Click on Debugger->  Make sure the interface is SWD->Tick the checkbox in the ST-LINK S/N option-> Click on scan-> If the borad is detected a random long number must appear (Ex:0668FF3138504B3043032130)-> Click on Apply->Then click on Run**
 
@@ -395,7 +404,10 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 
 >--- and so on keeps on increamenting
 
+# Troubleshoot 
+>**Note:** If you have an error called as open device error run the following command
 
+	sudo chmod 666 /dev/ttyUSB0
 
 
 
