@@ -111,6 +111,8 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 
 # Step 5: Microros Integration with CubeIDE
 **Generate the code using Device Configuration Tool Code Generation option (It looks like a golden cog wheel/gear)**
+>**Refer to the image**
+[Generate Code is 1 in the image](Images/Tool.jpeg)
 >**Note:** For the pop up saying open associated prespective click on Yes and for the Warnings in code generations ignore them and click on Yes
 
 **Make sure main.c is loaded properly**
