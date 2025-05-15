@@ -383,7 +383,7 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 
 >/rosout
 
-**If this topic is available then your microros installation is correct and the setup is complete /cubemx_publisher**
+**If the topic /cubemx_publisher is available then your microros installation is correct and the setup is complete**
 
 # FINAL TEST STEP:
 **Run the following line in the second terminal**
