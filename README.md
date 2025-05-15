@@ -64,7 +64,7 @@
 
 >**Note:** For initialize all peripherals with their default mode->Click Yes->Device config editor pop up -> Again click Yes.
 
-**An .ioc file would have been loaded where you can configure your STM32 Board Pins.
+**An .ioc file is where you can configure your STM32 Board Pins.
 Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
  >**Note:** For the warning that the Pinout configuration will be cleared Click Yes
 
