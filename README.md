@@ -402,7 +402,8 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 
 >data: 2
 
->--- and so on keeps on increamenting
+>---
+>and so on keeps on incrementing
 
 # Troubleshoot 
 >**Note:** If you have an error called as open device error run the following command
