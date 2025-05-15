@@ -89,10 +89,10 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 [DMA Settings](Images/DMA.png)
 
 **Now Under Connectivity choose->USART2->Mode as Asynchronous->Under DMA(Direct Memory Access) Settings->Click on ADD->Select USART2_Rx under the drop down->Set Priority to Very High->Also make sure under DMA Request Settings change mode from normal to circular.This setting is for the receiver.**
->**Important** Make sure under DMA Request Settings change mode from normal to circular for Rx
+>**Important:** Make sure under DMA Request Settings change mode from normal to circular for Rx
 
 **Similarly we are to set it up for transmitter,Under DMA(Direct Memory Access) Settings->Click on ADD->Select USART2_Tx under the drop down->Set Priority to Very High->Also make sure under DMA Request Settings set mode as normal.**
->**Important** Make sure under DMA Request Settings change mode is at normal for Tx
+>**Important:** Make sure under DMA Request Settings change mode is at normal for Tx
 
 **These are the DMA settings.**
 # NVIC Settings
@@ -106,8 +106,8 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 >**Refer to the image**
 [FREERTOS Settings](Images/FREERTOS.png)
 
-**You will see an Edit Task Pop up-> Change Stack Size (Words) from 128 to 3000-> Then click OK**
->**Important** Make sure the Stack Size(Words) is atleast has more than 10 kB 
+**You will see an Edit Task Pop up-> Change Stack Size (Words) from 128 to 3000(Stack size= 3000×4bytes=12kB)-> Then click OK**
+>**Important:** Make sure the Stack Size(Words) has atleast more than 10 kB 
 
 # Step 5: Microros Integration with CubeIDE
 **Generate the code using Device Configuration Tool Code Generation option (It looks like a golden cog wheel/gear)**
