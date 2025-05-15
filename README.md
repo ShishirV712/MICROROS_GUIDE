@@ -316,7 +316,7 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 >Exit.
 
 # TTL(Used for USB to UART Translations/Conversions) connections for STM32F411VETx(Discovery Board)
->**Note:** If you are using a Nucelo Board you can skip this step but this is a compulsary step for the Discovery Boad users
+>**Note:** If you are using a Nucelo Board you can skip this step but this is a compulsory step for the Discovery Boad users
 
 **TTL to STM32 connections are as follows:**
 **1) 5V of TTL to 5V of STM32 / 3.3V of TTL to 3V of STM32**
