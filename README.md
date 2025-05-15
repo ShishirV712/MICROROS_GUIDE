@@ -71,10 +71,10 @@ Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
 **This completes the initial setup.**
 
 # Step 3: Setting up the Pinout configuration
-**We need three things for installing and verifying microros which are Clock configuration, Debugging and UART**
+**We need to configure three things for installing and verifying microros which are Clock configuration, Debugging and UART**
 # Clock Configuration 
 **This defines the main clock(HSE) for the GPIO Pins/UART Pins and also for the LSE for the Watch dog Timer**
->**Note:** Advanced info(feel free to skip this):You can change clock settings in the Clock Configurations option where there is an interface to select which clock is used as the main clock (HSE/HSI/PLL) and which mode(Crystal Ceramic Oscillator/RC Oscillator/LC Oscillator) and also frequency can be set using frequency divders and multipliers.
+>**Note:** Advanced info:(feel free to skip this)You can change clock settings in the Clock Configurations option where there is an interface to select which clock is used as the main clock (HSE/HSI/PLL) and which mode(Crystal Ceramic Oscillator/RC Oscillator/LC Oscillator) and also frequency can be set using frequency divders and multipliers.
  
 **Click on System Core(Present in project explorer on the left hand side) ->RCC-> Select both High Speed External Clock (HSE) and Low Speed External Clock (LSE) as Crystal Ceramic Resonator this sets the main clock at 84MHz(For Nucleo board) and 100MHz(For Discovery Board).**
 >**Refer to the image**
