@@ -68,7 +68,7 @@
 Click on Pinout drop down-> Select Clear Pinouts (or just use shortcut crtl+p)**
  >**Note:** For the warning that the Pinout configuration will be cleared Click Yes
 
-**This completes intial setup.**
+**This completes initial setup.**
 
 # Step 3: Setting up the Pinout configuration
 **We need three things for installing and verifying microros which are Clock configuration, Debugging and UART**
